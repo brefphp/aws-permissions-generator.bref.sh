@@ -139,7 +139,7 @@ export default defineComponent({
         ></textarea>
         <div class="flex justify-end mt-2">
             <button @click="copyToClipboard" type="button" class="button">
-                <IconClipboard class="w-5 h-5 mr-1" :class="{ 'text-green-400': copied }" />
+                <IconClipboard class="w-5 h-5" :class="{ 'text-teal-500': copied }" />
                 <span v-if="!copied">Copy to clipboard</span>
                 <span v-if="copied"> Copied to clipboard </span>
             </button>
